@@ -1,0 +1,41 @@
+commit 909511b9bfc339199068751d2b57a609ecd0db47
+Author: zachkrasner <zachkrasner@gmail.com>
+Date:   Wed Feb 24 18:52:37 2016 -0800
+
+    Added 3 Custom features: YOLO, Remove Completed Items, and Export List to Text File
+
+commit 6e4a0725dcddd10484b939151904214842b5a4b1
+Author: zachkrasner <zachkrasner@gmail.com>
+Date:   Wed Feb 24 16:58:02 2016 -0800
+
+    Completed tasks in Udacitask.rb
+
+commit f22279d5228d50a1e5facdf6d340babe2272ff3e
+Author: zachkrasner <zachkrasner@gmail.com>
+Date:   Wed Feb 24 16:55:28 2016 -0800
+
+    Adding printing functionality to lists
+
+commit 5646029d0e25d92ecaef143113923cc46ed534e8
+Author: zachkrasner <zachkrasner@gmail.com>
+Date:   Wed Feb 24 16:26:03 2016 -0800
+
+    Added Toggle Completed functionality
+
+commit ff746d4fa795f7e18438e6c093812ee126e90df8
+Author: zachkrasner <zachkrasner@gmail.com>
+Date:   Wed Feb 24 11:28:13 2016 -0800
+
+    Added remove task functionality
+
+commit e828fd07115c22afc01010ebaaed1980b0ceff21
+Author: zachkrasner <zachkrasner@gmail.com>
+Date:   Wed Feb 24 11:14:27 2016 -0800
+
+    Added ability to Add New Item
+
+commit 5fc15e955967752e2c77a13b0b63519a784e9e00
+Author: zachkrasner <zachkrasner@gmail.com>
+Date:   Tue Feb 23 13:44:56 2016 -0800
+
+    Initial commit
