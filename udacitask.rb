@@ -16,13 +16,19 @@ list.remove_item(1)
 list.print_list
 
 # Delete the second item
+list.remove_item(2)
 
 # Print the list
+list.print_list
 
 # Update the completion status of the first item to complete
+list.toggle_complete(1)
 
 # Print the list
+list.print_list
 
 # Update the title of the list
+list.rename_list("New List Name")
 
 # Print the list
+list.print_list

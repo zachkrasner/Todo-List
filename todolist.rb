@@ -47,6 +47,7 @@ class TodoList
   def print_list
     print_header
     print_items
+    2.times { puts }  #add visual spacing
   end
 end
 
