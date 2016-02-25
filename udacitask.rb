@@ -7,11 +7,13 @@ list = TodoList.new
 4.times { list.add_item }
 
 # Print the list
-puts list.items
+list.print_list
 
 # Delete the first item
+list.remove_item(1)
 
 # Print the list
+list.print_list
 
 # Delete the second item
 

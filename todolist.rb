@@ -27,6 +27,27 @@ class TodoList
     @items[item_position - 1].completed_status
   end
 
+  # Printing Methods
+  def print_header
+    puts '######################################'
+    puts "List: " + @title
+    puts '######################################'
+    puts
+  end
+
+  def print_items
+    i = 1
+    @items.each do |item|
+      status = item.completed_status ? ("Completed") : ("Incomplete")
+      puts "#{ i }." + "\t" + "#{ item.description } \t\t (#{ status })"
+      i += 1
+    end
+  end
+
+  def print_list
+    print_header
+    print_items
+  end
 end
 
 class Item
@@ -43,8 +64,3 @@ class Item
     @completed_status = !@completed_status
   end
 end
-
-
-
-list = TodoList.new
-4.times { list.add_item }
