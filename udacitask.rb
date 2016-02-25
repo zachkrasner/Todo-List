@@ -1,10 +1,13 @@
 require_relative 'todolist.rb'
 
 # Creates a new todo list
+list = TodoList.new
 
 # Add four new items
+4.times { list.add_item }
 
 # Print the list
+puts list.items
 
 # Delete the first item
 
