@@ -1,0 +1,5 @@
+# new_features.txt
+
+Feature #1: <YOLO> - This feature understands that life is short, and sometimes your to-dos just aren't that important, so it puts things in perspective by removing the less important things and re-prioritizes life.
+Feature #2: <Remove Completed Items> - This feature easily searches through your items and removes those already complete.
+Feature #3: <Export List to Text File> - This feature exports your list to a new text file, or overwrites an existing text file with the new list.

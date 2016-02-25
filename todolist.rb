@@ -35,12 +35,20 @@ class TodoList
     puts
   end
 
-  def print_items
+  def generate_list
+    list = Array.new
     i = 1
     @items.each do |item|
       status = item.completed_status ? ("Completed") : ("Incomplete")
-      puts "#{ i }." + "\t" + "#{ item.description } \t\t (#{ status })"
+      list << "#{ i }." + "\t" + "#{ item.description } \t\t (#{ status })"
       i += 1
+    end
+    return list
+  end
+
+  def print_items
+    generate_list.each do |item|
+      puts item
     end
   end
 
@@ -48,6 +56,37 @@ class TodoList
     print_header
     print_items
     2.times { puts }  #add visual spacing
+  end
+
+  # Zach's New Features
+  def yolo(important_part_of_life = "QUIT YOUR JOB AND GO SURF IN COSTA RICA")
+    @title = "LIFE'S TODO LIST"
+    @items = []
+    add_item(important_part_of_life)
+    print_list
+  end
+
+  def remove_completed
+    @items.delete_if { |item| item.completed_status == false }
+  end
+
+  def export_to_txt(path)
+    # the paths should be a new name of a .txt file
+    unless File.exist?(path)
+      file = File.new(path, "w+")
+    else
+      file = File.open(path, "w+")
+    end
+
+    file.puts @title
+    file.puts ""
+
+    generate_list.each do |item|
+      file.puts item
+    end
+
+    file.close
+
   end
 end
 
@@ -64,4 +103,10 @@ class Item
   def toggle_completed
     @completed_status = !@completed_status
   end
+end
+
+def fake
+  list = TodoList.new
+  5.times { list.add_item }
+  return list
 end
